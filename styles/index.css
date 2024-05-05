@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap');
+:root{
+    --body-dark : #222;
+    --title-color : #00acee;
+    --glass-color : #fff1;
+}
+/* #region GENERAL*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100dvh;
+}
+section:not(#hero){
+    background-color: var(--bs-body-bg);
+    position: relative;
+    z-index: 1;
+}
+.text-color{
+    color: var(--title-color) !important;
+}
+.section-title{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff5;
+}
+/* #endregion */
+
+/* #region HERO SECTION*/
+h1.hero-title{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    font-size: 10vw;
+    color: var(--title-color);
+    width: 100%;
+    margin-top: 2rem ;
+}
+.hero-job-title{
+    width: 75%;
+    margin-top: -3.5vw;
+}
+.hero-title-frame{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+img.hero-img{
+    width: 50%;
+    position: relative;
+    margin-top: 15vw;
+    z-index: 1;
+    margin-inline: 25%; 
+}
+/* #endregion */
+
+/* #region EDUCATION SECTION*/
+.educational-details{
+    display: flex;
+    justify-content: space-between;
+}
+.score-board{
+    position: relative;
+    background-color: var(--glass-color);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    overflow: hidden;
+}
+@media (width < 1024px) {
+    .score-board{
+        text-align: center;
+    }
+    .score-board .fs-5{
+        font-size: .75rem !important;
+    }
+}
+/* #endregion */
+
+/* #region SKILL SECTION */
+.skill-title{
+    font-size: 1.8rem;
+}
+.skill-board{
+    position: relative;
+    background-color: var(--glass-color);
+    border-radius: 5px;
+    padding: 1rem;
+    height: 100%;
+    overflow: hidden;  
+}
+.skill-score{
+    font-size: 2rem;
+    color: #fff5;
+    font-weight: bold;
+}
+.skill-progress{
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    left: 0;
+    width: 0%;
+    background-color: var(--title-color);
+}
+/* #endregion */
+
+/* #region CONTACT SECTION */
+.contact-frame{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff9;
+}
+.contact-frame svg{
+    cursor: pointer;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contact-frame svg:hover{
+    transform: scale(1.1);
+}
+.bi-envelope-at-fill:hover{
+    color: #d44c3f;
+}
+.bi-facebook:hover{
+    color: #395797;
+}
+.bi-linkedin:hover{
+    color: #0572ab;
+}
+.bi-instagram:hover{
+    color: #c13483;
+}
+.bi-whatsapp:hover{
+    color: #47c756;
+}
+/* #endregion */
